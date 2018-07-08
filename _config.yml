@@ -1,10 +1,22 @@
 # Site settings
-title: My Little Website
-tagline: "Changing the world, one uninspired quote at a time"
-url: "http://yourwebsite.com" # The base hostname & protocol for your site. Use it if you need absolute URL's
+title: Packlist Test
+tagline: "A test site for experimentation with Jekyll"
+# url:  # The base hostname & protocol for your site. Use it if you need absolute URL's
+
+# Site collections
+collections:
+  animals:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "animals"
+    values:
+      layout: animal
 
 # Social
-socialimg: /img/social.jpg # be sure to change this image
+socialimg: /images/social.jpg # be sure to change this image
 facebook: fbusername
 twitter: twusername
 github: ghusername
@@ -12,8 +24,8 @@ googleplus: gusername
 instagram: igusername
 
 # Contact
-phone: "916-276-1044" # This is my real number. You should text me.
-email: "hello@garrettboatman.com" # This is my real email address. Please don't email me.
+phone: "555-555-5555" # Temp phone number
+email: "jasonhenrymarsh@gmail.com"
 
 # Use this for production
 #sass:
